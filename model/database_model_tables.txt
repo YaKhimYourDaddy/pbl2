@@ -1,0 +1,130 @@
+1. Director
+- idDirector (STRING)
+- name (STRING)
+
+2. Genre
+- idGenre (STRING)
+- name (STRING)
+
+3. Actor
+- idActor (STRING)
+- name (STRING)
+
+4. Rate
+- idRate (STRING)
+- name (STRING)
+- description (STRING)
+
+5. ScreenMode
+- idScreenMode (STRING)
+- name (STRING)
+- description (STRING)
+
+6. Movie
+- idMovie (STRING)
+- name (STRING)
+- description (STRING)
+- releaseDate (STRING)
+- duration (STRING)
+
+7. DirectorInMovie
+- idDirector (STRING)
+- idMovie (STRING)
+
+8. ActorInMovie
+- idActor (STRING)
+- idMovie (STRING)
+
+9. GenreInMovie
+- idGenre (STRING)
+- idMovie (STRING)
+
+10. RateInMovie
+- idRate (STRING)
+- idMovie (STRING)
+
+11. ScreenModeInMovie
+- idScreenMode (STRING)
+- idMovie (STRING)
+
+12. City
+- idCity (STRING)
+- name (STRING)
+
+13. Branch
+- idBranch (STRING)
+- idCity (STRING)
+- address (STRING)
+
+14. Room
+- idRoom (STRING)
+- idBranch (STRING)
+- name (STRING)
+- maxRow (STRING)
+- maxColumn (STRING)
+
+15. Seat
+- idSeat (STRING)
+- idRoom (STRING)
+- column (INT)
+- row (INT)
+
+16. Showtime
+- idShowtime (STRING)
+- idRoom (STRING)
+- idScreenModeInMovie (STRING)
+- onScreenDateTime (STRING)
+
+17. Ticket
+- idTicket (STRING)
+- idShowtime (STRING)
+- idSeat (STRING)
+- isAvailable (BOOLEAN)
+
+18. TicketOrder
+- idTicketOrder (STRING)
+- idTicket (STRING)
+- idOrder (STRING)
+
+19. FoodDrink
+- idFoodDrink (STRING)
+- name (STRING)
+- currentPrice (INT)
+
+20. FoodDrinkOrder
+- idFoodDrinkOrder (STRING)
+- idOrder (STRING)
+- idFoodDrink (STRING)
+- quantity (INT)
+- purchasedPrice (INT)
+
+21. Order
+- idOrder (STRING)
+- idEmployee (STRING)
+- idCustomer (STRING)
+- orderDateTime (STRING)
+
+22. Account
+- username (STRING)
+- password (STRING)
+- mail (STRING)
+- phone (STRING)
+- idCitizen (STRING)
+
+23. Citizen
+- idCitizen (STRING)
+- name (STRING)
+
+24. Employee
+- idEmployee (STRING)
+- idCitizen (STRING)
+- encodedShift (STRING)
+- idRole (STRING)
+- startDate (STRING)
+- endDate (STRING)
+
+25. Role
+- idRole (STRING)
+- name (STRING)
+- description (STRING)
+- wagePerHour (INT)
