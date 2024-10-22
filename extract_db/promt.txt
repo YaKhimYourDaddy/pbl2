@@ -1,0 +1,36 @@
+let's start again, we have the imdb_top_1000.json file, I need you to write python code to extract data into these txt files, with headers, seperate by |, follow instructions below
+
+1. Director.txt
+- idDirector (STRING) (like idDirector0001, idDirector0002, idDirector0003, ...)
+- name (STRING) (distincted, not duplicated)
+
+2. Genre.txt
+- idGenre (STRING) (like idGenre01, idGenre02, idGenre03, ...)
+- name (STRING) (distincted, not duplicated)
+(notice that the genre attribute in the json file contains many genres, you seperate them)
+
+3. Actor.txt
+- idActor (STRING) (like idActor00001, idActor00002, idActor00003,...)
+- name (STRING)
+
+4. Movie.txt
+- idMovie (STRING) (like idMovie00001, idMovie00002, idMovie00003,...)
+- name (STRING)
+- description (STRING)
+- releaseDate (STRING)
+- duration (STRING)
+
+5. DirectorInMovie.txt
+(this is relationship data between Director and Movie, contain 2 foreign keys, each line represent 1 Director and 1 Movie, can be duplicated)
+- idDirector (STRING) 
+- idMovie (STRING)
+
+6. ActorInMovie
+(this is relationship data between Actor and Movie, contain 2 foreign keys, each line represent 1 Actor and 1 Movie, can be duplicated)
+- idActor (STRING)
+- idMovie (STRING)
+
+7. GenreInMovie
+(this is relationship data between Genre and Movie, contain 2 foreign keys, each line represent 1 Genre and 1 Movie, can be duplicated)
+- idGenre (STRING)
+- idMovie (STRING)

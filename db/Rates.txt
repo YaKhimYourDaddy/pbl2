@@ -1,0 +1,12 @@
+idRate|name|description
+idRate01|G|General Audiences – All Ages Admitted
+idRate02|PG|Parental Guidance Suggested – Some Material May Not Be Suitable for Children
+idRate03|PG-13|Parents Strongly Cautioned – Some Material May Be Inappropriate for Children Under 13
+idRate04|R|Restricted – Under 17 Requires Accompanying Parent or Adult Guardian
+idRate05|NC-17|Adults Only – No One 17 and Under Admitted
+idRate06|P|For all ages
+idRate07|K|For viewers under 13 with a parent or guardian
+idRate08|C|Prohibited from dissemination
+idRate09|T13|For viewers 13 and older
+idRate10|T16|For viewers 16 and older
+idRate11|T18|For viewers 18 and older
